@@ -11,33 +11,19 @@ Si jamais cette documentation vient a être défaillante, merci de faire une iss
 Un simple sommaire afin de naviguer facilement entre les différentes catégories.
 
 - [Introduction](#introduction)
+- [Login](#login)
+
+## Format de la documentation
+Les requêtes prennent soit des query string dans l'URL (ex: ''https://api.exoldirecte.com/example.awp?requete=marequete'') soit du JSON dans le corp de la requête
+```
+fetch('https://reqbin.com/echo/post/json', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ "requete": "marequete" })
+})
+```
 
 ## Login
-
-qds
-ds
-s
-s
-s
-s
-s
-s
-s
-s
-s
-s
-s
-s
-
-s
-s
-s
-s
-s
-ss
-s
-s
-
-s
-s
-s
