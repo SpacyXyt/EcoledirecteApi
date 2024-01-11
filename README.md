@@ -38,10 +38,15 @@ fetch('https://reqbin.com/echo/post/json', {
   "data": {...},
 }
 ```
-Voici à quoi ressemble une réponse que pourrez vous envoyez l'api suite à une demande que vous auriez fait.
+Voici à quoi ressemble une réponse que pourrez vous envoyez l'api.
 Voici à quoi corresponde les differente partie de la réponse:
 ``"host": "HTTP<n° serveur>",``: Cette ligne correspond au serveur vers ou votre demande à été envoyer, nous y reviendront dans la partie sur les serveur.
 ``"code": 200,``: Cette ligne correspond au code que le serveur vous renvoie, vous verez les different code que le serveur peut vous renvoyez dans la partie Code.
+``"token": "<token>",``: Cette ligne correspond à votre token, c'est avec cette clé que vous pourrez vous autentifiez sans devoir entrer le mot de passe à chaque fois.
+``"message": "",``: Cette ligne correspond à la traduction du code de la ligne 2, vous pourrez voir le message d'erreur ou de réussite.
+
+
+**Important**:
 Mais dans l'api il n'y aura que les données dans ``data`` qui vont seront vraiment utiles, c'est dans cette partie de la réponse que vous trouverez ce que vous avez demander à l'api.
 
 ## Login
