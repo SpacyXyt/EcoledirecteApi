@@ -14,7 +14,7 @@ Un simple sommaire afin de naviguer facilement entre les différentes catégorie
 - [Login](#login)
 
 ## Format de la documentation
-Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.exoldirecte.com/example.awp?requete=marequete``) soit du JSON dans le corp de la requête
+Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.exoldirecte.com/example.awp?requete=marequete``) soit du JSON dans le corp de la requête, example:
 ```
 fetch('https://reqbin.com/echo/post/json', {
     method: 'POST',
@@ -25,5 +25,18 @@ fetch('https://reqbin.com/echo/post/json', {
     body: JSON.stringify({ "requete": "marequete" })
 })
 ```
+
+**Important**: Toutes demande à l'api sont effectuer en ``POST`` (``method: 'POST'``). Il faut aussi envoyer un paramètre ``verbe`` (``/example.awp?verbe=POSTE``) utilisé pour spécifier le verbe HTTP. Ici nous n'utiliseront pas ce paramètre, en vue du fait que même sans celui-ci la requête est fonctionel.
+
+Les réponses de l'api ressemble à cela:
+```{
+  "host": "HTTP<n° serveur>",
+  "code": 200, // Ou autre en cas d'erreur
+  "token": "<token>",
+  "message": "", // Rarement présent hors erreur, sinon en cas d'erreur
+  "data": {...},
+}```
+
+Mais dans l'api il n'y aura que les données dans ``data`` qui vont seront vraiment utiles, c'est dans cette partie de la réponse que vous trouverez ce que vous avez demander à l'api.
 
 ## Login
