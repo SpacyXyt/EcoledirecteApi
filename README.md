@@ -10,6 +10,6 @@ Si jamais cette documentation vient a être défaillante, merci de faire une iss
 ## Sommaire
 Un simple sommaire afin de naviguer facilement entre les différentes catégories.
 
-- [Introduction] (#Introduction)
+- [Introduction](#Introduction)
 
 ## Login
