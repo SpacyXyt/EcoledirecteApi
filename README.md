@@ -28,7 +28,7 @@ fetch('https://reqbin.com/echo/post/json', {
 
 **Important**: Toutes demande à l'api sont effectuer en ``POST`` (``method: 'POST'``). Il faut aussi envoyer un paramètre ``verbe`` (``/example.awp?verbe=POSTE``) utilisé pour spécifier le verbe HTTP. Ici nous n'utiliseront pas ce paramètre, en vue du fait que même sans celui-ci la requête est fonctionel.
 
-Les réponses de l'api ressemble à cela:
+**Réponse de l'api**:
 ```
 {
   "host": "HTTP<n° serveur>",
@@ -38,7 +38,10 @@ Les réponses de l'api ressemble à cela:
   "data": {...},
 }
 ```
-
+Voici à quoi ressemble une réponse que pourrez vous envoyez l'api suite à une demande que vous auriez fait.
+Voici à quoi corresponde les differente partie de la réponse:
+``"host": "HTTP<n° serveur>",``: Cette ligne correspond au serveur vers ou votre demande à été envoyer, nous y reviendront dans la partie sur les serveur.
+``"code": 200,``: Cette ligne correspond au code que le serveur vous renvoie, vous verez les different code que le serveur peut vous renvoyez dans la partie Code.
 Mais dans l'api il n'y aura que les données dans ``data`` qui vont seront vraiment utiles, c'est dans cette partie de la réponse que vous trouverez ce que vous avez demander à l'api.
 
 ## Login
