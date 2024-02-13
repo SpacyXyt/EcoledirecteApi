@@ -14,7 +14,7 @@ Un simple sommaire afin de naviguer facilement entre les différentes catégorie
 - [Login](#login)
 
 ## Format de la documentation
-Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.exoldirecte.com/example.awp?requete=marequete``) soit du JSON dans le corp de la requête, example:
+Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.exoldirecte.com/example.awp?requete=requête``) soit du JSON dans le corp de la requête, example:
 ```
 fetch('https://reqbin.com/echo/post/json', {
     method: 'POST',
