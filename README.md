@@ -14,7 +14,7 @@ Un simple sommaire afin de naviguer facilement entre les différentes catégorie
 - [Login](#login)
 
 ## Format de la documentation
-Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.ecoledirecte.com/example.awp?requete=requête``) soit du JSON dans le corps de la requête, example:
+Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.ecoledirecte.com/example.awp?requete=requête``) soit du JSON dans le corps de la requête, exemple :
 ```
 .fetch('https://api.ecoledirecte.com/example.awp', {
     method: 'POST',
