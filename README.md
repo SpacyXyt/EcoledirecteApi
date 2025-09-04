@@ -44,7 +44,7 @@ Voici à quoi ressemble une réponse que pourrait vous envoyer l'api.
 Voici à quoi correspondent les differentes parties de la réponse:
 ``"host": "HTTP<n° serveur>",``: Cette ligne correspond au serveur vers lequel votre demande a été envoyée, nous y reviendrons dans la partie sur les serveur.
 ``"code": 200,``: Cette ligne correspond au code que le serveur vous renvoie, vous verez les differents codes que le serveur peut vous renvoyez dans la partie Code.
-``"token": "<token>",``: Cette ligne correspond à votre token, c'est avec cette clé que vous pourrez vous autentifier sans devoir entrer le mot de passe à chaque fois.
+``"token": "<token>",``: Cette ligne correspond à votre token, c'est avec cette clé que vous pourrez vous authentifier sans devoir entrer le mot de passe à chaque fois.
 ``"message": "",``: Cette ligne correspond à la traduction du code de la ligne 2, vous pourrez voir le message d'erreur ou de réussite.
 
 
