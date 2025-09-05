@@ -14,7 +14,7 @@ Un simple sommaire afin de naviguer facilement entre les différentes catégorie
 - [Login](#login)
 
 ## Format de la documentation
-Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.ecoledirecte.com/example.awp?requete=requête``) soit du JSON dans le corp de la requête, example:
+Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.ecoledirecte.com/example.awp?requete=requête``) soit du JSON dans le corps de la requête, exemple :
 ```
 .fetch('https://api.ecoledirecte.com/example.awp', {
     method: 'POST',
@@ -28,7 +28,7 @@ Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.ecole
 });
 ```
 
-**Important**: Toutes demande à l'api sont effectuer en ``POST`` (``method: 'POST'``). Il faut aussi envoyer un paramètre ``verbe`` (``/example.awp?verbe=POSTE``) utilisé pour spécifier le verbe HTTP. Ici nous n'utiliseront pas ce paramètre, en vue du fait que même sans celui-ci la requête est fonctionel.
+**Important**: Toutes les demandes envoyées à l'api sont effectuées en ``POST`` (``method: 'POST'``). Il faut aussi envoyer un paramètre ``verbe`` (``/example.awp?verbe=POSTE``) utilisé pour spécifier le verbe HTTP. Ici nous n'utiliserons pas ce paramètre, en vue du fait que même sans celui-ci la requête est fonctionelle.
 
 **Réponse de l'api**:
 ```
@@ -40,15 +40,15 @@ Les requêtes prennent soit des query string dans l'URL (ex: ``https://api.ecole
   "data": {...},
 }
 ```
-Voici à quoi ressemble une réponse que pourrez vous envoyez l'api.
-Voici à quoi corresponde les differente partie de la réponse:
-``"host": "HTTP<n° serveur>",``: Cette ligne correspond au serveur vers ou votre demande à été envoyer, nous y reviendront dans la partie sur les serveur.
-``"code": 200,``: Cette ligne correspond au code que le serveur vous renvoie, vous verez les different code que le serveur peut vous renvoyez dans la partie Code.
-``"token": "<token>",``: Cette ligne correspond à votre token, c'est avec cette clé que vous pourrez vous autentifiez sans devoir entrer le mot de passe à chaque fois.
+Voici à quoi ressemble une réponse que pourrait vous envoyer l'api.
+Voici à quoi correspondent les differentes parties de la réponse:
+``"host": "HTTP<n° serveur>",``: Cette ligne correspond au serveur vers lequel votre demande a été envoyée, nous y reviendrons dans la partie sur les serveur.
+``"code": 200,``: Cette ligne correspond au code que le serveur vous renvoie, vous verez les differents codes que le serveur peut vous renvoyez dans la partie Code.
+``"token": "<token>",``: Cette ligne correspond à votre token, c'est avec cette clé que vous pourrez vous authentifier sans devoir entrer le mot de passe à chaque fois.
 ``"message": "",``: Cette ligne correspond à la traduction du code de la ligne 2, vous pourrez voir le message d'erreur ou de réussite.
 
 
 **Important**:
-Mais dans l'api il n'y aura que les données dans ``data`` qui vont seront vraiment utiles, c'est dans cette partie de la réponse que vous trouverez ce que vous avez demander à l'api.
+Mais dans l'api il n'y aura que les données dans ``data`` qui vont seront vraiment utiles, c'est dans cette partie de la réponse que vous trouverez ce que vous avez demandé à l'api.
 
 ## Login
